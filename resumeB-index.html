@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        
+        <h2>Education</h2>
+        <textarea id="education" placeholder="Education Details" required></textarea>
+        
+        <h2>Experience</h2>
+        <textarea id="experience" placeholder="Work Experience" required></textarea>
+        
+        <button type="submit">Generate Resume</button>
+    </form>
+    <div id="resume-output" style="display: none;">
+        <h2>Generated Resume</h2>
+        <pre id="resume-content"></pre>
+        <button id="print-button">Print Resume</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
