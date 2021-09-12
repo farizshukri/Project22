@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Music Library</h1>
+    <div id="music-list"></div>
+    <h2>Add a New Song</h2>
+    <form id="music-form">
+        <input type="text" id="title" placeholder="Song Title" required>
+        <input type="text" id="artist" placeholder="Artist" required>
+        <input type="text" id="file" placeholder="File URL" required>
+        <button type="submit">Add Song</button>
+    </form>
+    <audio id="audio-player" controls></audio>
+    <script src="script.js"></script>
+</body>
+</html>
